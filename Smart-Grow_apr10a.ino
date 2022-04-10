@@ -73,6 +73,10 @@ void loop() {
   moisture = analogRead(Moisturepin);
   Serial.println(value1);
   digitalWrite(greenLED, HIGH);
+  
+  if (switchstate == 1) {
+  digitalWrite(redLED,LOW);
+  lowWater = 0;
   if(LEDs == 1){
     digitalWrite(Pumppin, LOW);
     pump = 1;
@@ -122,12 +126,11 @@ void loop() {
       }
     }
   }
-  if (switchstate == 1) {
-  digitalWrite(redLED,LOW);
-  lowWater = 0;
   } else {
     digitalWrite(redLED,HIGH);
     lowWater = 1;
+    digitalWrite(Pumppin,HIGH);
+    pump = 0;
   }
 }
 
