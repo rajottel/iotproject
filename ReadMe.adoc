@@ -1,0 +1,47 @@
+:Author: rajottel
+:Email: rajottel@mcmaster.ca
+:Date: 10/04/2022
+:Revision: version 2
+:License: Public Domain
+
+= Project: Smart-Grow
+
+Describe your project
+
+== Step 1: Installation
+1. Import files to arduino IoT cloud Thing
+2. Edit arduino_secrets.h to match your wifi settings
+3. Create cloud variables in arduino IoT cloud that match those in thingProperties.h
+
+
+== Step 2: Assemble the circuit
+
+Assemble the circuit following the diagram layout.png attached in the repository
+
+== Step 3: Load the code
+
+Upload the code contained in this sketch on to your board
+
+=== Folder structure
+
+....
+ Smart-Grow_apr10a          
+  ├── Smart-Grow_apr10a.ino 
+  ├── schematic.png         
+  ├── thingProperties.h
+  ├── arduino_secrets.h
+  ├── sketch.json
+  ├── billofmaterials.pdf
+  └── ReadMe.adoc         
+....
+
+
+
+=== Contributing
+To contribute to this project please contact: 
+Lucas Rajotte, rajottel@mcmaster.ca
+Daniel Sioldea, sioldead@mcmaster.ca
+Severin Hidajat, hidajats@mcmaster.ca
+
+=== BOM
+BOM can be found in billofmaterials.pdf
